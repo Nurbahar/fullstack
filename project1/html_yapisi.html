@@ -207,8 +207,74 @@
     </div>
     <br />
     <a href="semantik-tags.html">Semantik kodlanmış sayfa </a>
+    <br />
 
-    <!---->
+    <!-- tablolar table tablo tr satır td sütun td*7 sayı adedince sütun oluşturur
+    tablonun da head ve body kısımları vardır ,cellpadding hücre içi mesafe , cellspacing hücrelerarası mesafe , width height ise sayfa konumu , rowspan sütun birleştirme colspan satır birleştirme -->
+    <h3>Tablo</h3>
+    <table>
+      <tr>
+        <td>
+          <!--1 tablo-->
+          <table border="1" width="70%" cellpadding="10" cellspacing="10">
+            <thead>
+              <th>1.model</th>
+              <th>2.model</th>
+              <th>3.model</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>iphone11</td>
+                <td>7000</td>
+                <td>1.jpg</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>iphone12</td>
+                <td>7000</td>
+                <td>2.jpg</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>iphone13</td>
+                <td>7000</td>
+                <td>3.jpg</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <!-- 2.tablo-->
+          <table border="1" cellpadding="8" cellspacing="8">
+            <thead>
+              <th>1.model</th>
+              <th>2.model</th>
+              <th>3.model</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">1- 2</td>
+                <td>iphone11</td>
+                <td>7000</td>
+                <td>1.jpg</td>
+              </tr>
+              <tr>
+                <td>iphone12</td>
+                <td>7000</td>
+                <td>2.jpg</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>iphone13</td>
+                <td colspan="2">7000 -3.jpg</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+
     <!---->
   </body>
 </html>
