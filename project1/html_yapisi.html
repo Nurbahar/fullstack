@@ -274,7 +274,78 @@
         </td>
       </tr>
     </table>
+    <!-- Form -->
+    <h2>Form yapısı</h2>
+    <form action="register.php">
+      <div>
+        <label for="name">Adınız</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="surname">Soyadınız</label>
+        <input type="text" id="surname" />
+      </div>
+      <div>
+        <label for="password">Şifre</label>
+        <input type="password" id="password" />
+      </div>
+      <br />
+      <div>
+        <label for="">Kendini Anlat:</label>
+        <textarea></textarea>
+      </div>
 
-    <!---->
+      <!-- birçok input çeşidi var : radio button inputlarında name yi aynı vermeliyiz tek seçeneğin seçili olması için, checkbox için nameler farklı olmalı  date inputun max min tarihi ayarlanabilir-->
+      <div>
+        <p>En Sevdiğin Programlama Dili:</p>
+
+        <input type="radio" name="programlama" id="php" />
+        <label for="php">PHP</label>
+
+        <input type="radio" name="programlama" id="js" />
+        <label for="js">JS</label>
+
+        <input type="radio" name="programlama" id="java" />
+        <label for="java">JAVA</label>
+
+        <input type="radio" name="programlama" id="python" />
+        <label for="python">PYTHON</label>
+      </div>
+      <div>
+        <label for="sehirler">Şehir</label>
+        <select id="sehirler">
+          <option value="72">Batman</option>
+          <option value="34">İstanbul</option>
+          <option value="01">Adana</option>
+        </select>
+      </div>
+
+      <div>
+        <p>En Sevdiğin Yazılım Dili:</p>
+
+        <input type="checkbox" name="php" id="php2" />
+        <label for="php2">PHP</label>
+
+        <input type="checkbox" name="js" id="js2" />
+        <label for="js2">JS</label>
+
+        <input type="checkbox" name="Java" id="java2" />
+        <label for="java2">JAVA</label>
+
+        <input type="checkbox" name="python" id="python2" />
+        <label for="python2">PYTHON</label>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="eposta" />
+      </div>
+      <div>
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" id="birthday" />
+      </div>
+      <button type="submit">KAYDET</button>
+      <button type="reset">Temizle</button>
+    </form>
   </body>
 </html>
